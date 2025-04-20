@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apúntate al Crucero</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>¡Reserva tu Crucero!</h1>
+    <form action="http://172.22.200.240/resultado.php" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Detalles del Viaje</legend>
+            <div>
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino">
+                    <option value="caribe">Caribe</option>
+                    <option value="mediterraneo">Mediterráneo</option>
+                    <option value="griegas">Islas greigas</option>
+                    <option value="fiordos">Fiordos</option>
+                </select>
+            </div>
+            <div>
+                <label for="fecha">Fecha Preferida:</label>
+                <input type="date" id="fecha" name="fecha">
+            </div>
+            <div>
+                <label for="pasajeros">Número de Pasajeros:</label>
+                <input type="number" id="pasajeros" name="pasajeros" min="1" value="1">
+            </div>
+        </fieldset>
+
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+    <footer>
+        <a href="../index.html">← Volver al inicio</a>
+    </footer>
+</body>
+</html>
